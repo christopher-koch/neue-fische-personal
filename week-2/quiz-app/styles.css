@@ -1,5 +1,5 @@
 :root {
-    --color-white: #cfc9c2;
+    --color-white: #c0caf5;
     --color-light-gray: #9aa5ce;
     --color-middle-gray: #565f89;
     --color-gray: #414868;
@@ -10,10 +10,9 @@
     --color-yellow: #e0af68;
     --color-green: #9ece6a;
     --color-ice: #73daca;
-    --color-ice: #2ac3de;
+    --color-turquoise: #2ac3de;
     --color-ice: #7dcfff;
-    --color-ice: #bb9af7;
-    --color-ice: #c0caf5;
+    --color-purple: #bb9af7;
 }
 
 @font-face {
@@ -21,7 +20,7 @@
     src:
       url('Hubot-Sans.woff2') format('woff2 supports variations'),
       url('Hubot-Sans.woff2') format('woff2-variations');
-    font-weight: 200, 300, 400, 500, 600, 700, 800, 900;
+    font-weight: 200 900;
     font-stretch: 75% 125%;
   }
 
@@ -36,6 +35,7 @@ body {
     color: var(--color-white);
     padding: 0;
     margin: 0;
+    font-weight: 400;
 }
 
 main {
@@ -48,11 +48,15 @@ main {
 }
 
 h1 {
-    font-size: 2.2rem;
-    font-weight: 800;
+    font-size: 2rem;
+    font-weight: 900;
+    font-stretch: extra-expanded;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
 }
 
 .nav-bar {
+    z-index: 2;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -72,8 +76,10 @@ h1 {
 
 .card_container {
     width: 100%;
-    height: 400px;
-    overflow-y: scroll;
+    padding-top: 10rem;
+    padding-bottom: 2rem;
+    max-height: 400px;
+    overflow: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -88,10 +94,11 @@ article {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     border-radius: 10px;
     box-shadow: 5px 5px 20px #000;
     text-align: center;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 footer {
@@ -116,11 +123,22 @@ footer {
 .question {
     font-size: 1.4rem;
     font-style: italic;
-    font-weight: 200;
+    font-weight: 300;
+    line-height: 1.8rem;
 }
 
 .btn_answer {
-    width: 50%;
+    width: fit-content;
+    padding: 0.6rem 1.4rem;
+}
+
+button {
+    font-weight: 900;
+    font-stretch: ultra-expanded;
+    text-transform: uppercase;
+    background-color: var(--color-ice);
+    border: none;
+    color: var(--color-black)
 }
 
 .tag_list {
@@ -134,4 +152,10 @@ article ul li {
     background-color: var(--color-dark-gray);
     padding: 0.6rem 0.8rem;
     border-radius: 5px;
+}
+
+.footer-icon {
+    color: var(--color-red);
+    width: 30px;
+    height: 30px;
 }
