@@ -1,0 +1,54 @@
+:root {
+    --color-white: #cfc9c2;
+    --color-black: #24283b;
+    --color-dark: #414868;
+
+}
+
+@font-face {
+    font-family: 'Hubot Sans';
+    src:
+      url('Hubot-Sans.woff2') format('woff2 supports variations'),
+      url('Hubot-Sans.woff2') format('woff2-variations');
+    font-weight: 200, 300, 400, 500, 600, 700, 800, 900;
+    font-stretch: 75% 125%;
+  }
+
+html {
+    font-family: 'Hubot Sans';
+}
+
+body {
+    box-sizing: border-box;
+    width: 375px;
+    height: auto;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    width: 100%;
+
+}
+
+h1 {
+    font-size: 2.2rem;
+    font-weight: 800;
+}
+
+.nav-bar {
+    width: 100%;
+    text-align: center;
+    background-color: red;
+    height: auto;
+}
+
+.main_container {
+    background-color: var(--color-dark);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
