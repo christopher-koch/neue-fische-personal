@@ -89,6 +89,7 @@ h1 {
 
 article {
     background-color: var(--color-gray);
+    position: relative;
     width: 80%;
     padding: 1.6rem 0rem;
     display: flex;
@@ -129,11 +130,12 @@ footer {
 
 .btn_answer {
     width: fit-content;
-    padding: 0.6rem 1.4rem;
+    padding: 0.8rem 2rem;
 }
 
 button {
     font-weight: 900;
+    font-size: 1rem;
     font-stretch: ultra-expanded;
     text-transform: uppercase;
     background-color: var(--color-ice);
@@ -155,7 +157,16 @@ article ul li {
 }
 
 .footer-icon {
-    color: var(--color-red);
+    color: var(--color-gray);
     width: 30px;
     height: 30px;
+}
+
+.bookmark-icon {
+    color: var(--color-orange);
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 10%;
+    top: -2%;
 }
