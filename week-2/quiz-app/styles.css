@@ -1,8 +1,19 @@
 :root {
     --color-white: #cfc9c2;
-    --color-black: #24283b;
-    --color-dark: #414868;
-
+    --color-light-gray: #9aa5ce;
+    --color-middle-gray: #565f89;
+    --color-gray: #414868;
+    --color-dark-gray: #24283b;
+    --color-black: #1a1b26;
+    --color-red: #f7768e;
+    --color-orange: #ff9e64;
+    --color-yellow: #e0af68;
+    --color-green: #9ece6a;
+    --color-ice: #73daca;
+    --color-ice: #2ac3de;
+    --color-ice: #7dcfff;
+    --color-ice: #bb9af7;
+    --color-ice: #c0caf5;
 }
 
 @font-face {
@@ -20,8 +31,7 @@ html {
 
 body {
     box-sizing: border-box;
-    width: 375px;
-    height: auto;
+    width: 100%;
     background-color: var(--color-black);
     color: var(--color-white);
     padding: 0;
@@ -29,8 +39,12 @@ body {
 }
 
 main {
+    display: flex;
+    align-items: center;
     width: 100%;
-
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
@@ -40,15 +54,84 @@ h1 {
 
 .nav-bar {
     width: 100%;
-    text-align: center;
-    background-color: red;
-    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-black);
+    height: 80px;
 }
 
 .main_container {
-    background-color: var(--color-dark);
+    width: 375px;
+    height: auto;
+    background-color: var(--color-black);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 2px 45px #000;
+}
+
+.card_container {
+    width: 100%;
+    height: 400px;
+    overflow-y: scroll;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 1rem;
+}
+
+article {
+    background-color: var(--color-gray);
+    width: 80%;
+    padding: 1.6rem 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px #000;
+    text-align: center;
+    gap: 1rem;
+}
+
+footer {
+    background-color: var(--color-black);
+    height: 60px;
+    width: 100%;
+}
+
+.footer-list {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.footer-list ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.question {
+    font-size: 1.4rem;
+    font-style: italic;
+    font-weight: 200;
+}
+
+.btn_answer {
+    width: 50%;
+}
+
+.tag_list {
+    display: flex;
+    padding: 0rem 0.6rem;
+    gap: 0.5rem;
+    
+}
+
+article ul li {
+    background-color: var(--color-dark-gray);
+    padding: 0.6rem 0.8rem;
+    border-radius: 5px;
 }
