@@ -1,0 +1,17 @@
+.main_container {
+    background-color: var(--color-black);
+    box-shadow: 0px 2px 45px #000;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-black);
+    height: 80px;
+}
+
