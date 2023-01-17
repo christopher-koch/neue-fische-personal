@@ -4,45 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=#, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
     <title>Quiz App</title>
 </head>
 <body>
     <main>
         <section class="main_container">
-            <nav class="nav-bar">
+            <nav class="header">
                 <h1>Quiz App</h1>
             </nav>
-            <section class="card_container">
+            <section class="card">
                 <article>
-                    <a href="#"><ion-icon class="bookmark-icon__inactive" name="bookmark"></ion-icon></a>
-                    <h2 class="question">What Property flips the axis in flexbox?</h2>
-                    <button class="btn_answer">Answer</button>
-                    <h3 class="answer">Here stands the answer</h3>
-                    <ul class="tag_list">
+                    <a href="#"><ion-icon class="card__bookmark-icon--inactive" name="bookmark"></ion-icon></a>
+                    <h2 class="card__question">What Property flips the axis in flexbox?</h2>
+                    <button class="card__btn_answer">Answer</button>
+                    <h3 class="card__answer">Here stands the answer</h3>
+                    <ul class="card__tag_list">
                         <li>#html</li>
                         <li>#css</li>
                         <li>#flexbox</li>
                     </ul>
                 </article>
+            </section>
+            <section class="card">
                 <article>
-                    <a href="#"><ion-icon class="bookmark-icon" name="bookmark"></ion-icon></a>
-                    <h2 class="question">Here stands another question</h2>
-                    <button class="btn_answer">Answer</button>
-                    <h3 class="answer">Here stands the answer</h3>
-                    <ul class="tag_list">
+                    <a href="#"><ion-icon class="card__bookmark-icon" name="bookmark"></ion-icon></a>
+                    <h2 class="card__question">Here stands another question</h2>
+                    <button class="card__btn_answer">Answer</button>
+                    <h3 class="card__answer">Here stands the answer</h3>
+                    <ul class="card__tag_list">
                         <li>#html</li>
                         <li>#css</li>
                         <li>#flexbox</li>
                     </ul>
                 </article>
+            </section>
+            <section class="card">
                 <article>
-                    <a href="#"><ion-icon class="bookmark-icon" name="bookmark"></ion-icon></a>
-                    <h2 class="question">Here stands another question</h2>
-                    <button class="btn_answer">Answer</button>
-                    <h3 class="answer">Here stands the answer</h3>
-                    <ul class="tag_list">
+                    <a href="#"><ion-icon class="card__bookmark-icon" name="bookmark"></ion-icon></a>
+                    <h2 class="card__question">Here stands another question</h2>
+                    <button class="card__btn_answer">Answer</button>
+                    <h3 class="card__answer">Here stands the answer</h3>
+                    <ul class="card__tag_list">
                         <li>#html</li>
                         <li>#css</li>
                         <li>#flexbox</li>
@@ -51,14 +54,12 @@
             </section>
         </section>
     </main>
-    <footer>
-        <section class="footer-list">
+    <footer class="footer">
             <ul>
-                <a href="#"><ion-icon class="footer-icon__active" name="home"></ion-icon></a>
-                <a href="#"><ion-icon class="footer-icon" name="bookmark"></ion-icon></a>
-                <a href="#"><ion-icon class="footer-icon" name="person"></ion-icon></a>
+                <a href="#"><ion-icon class="footer__icon--active" name="home"></ion-icon></a>
+                <a href="#"><ion-icon class="footer__icon" name="bookmark"></ion-icon></a>
+                <a href="#"><ion-icon class="footer__icon" name="person"></ion-icon></a>
             </ul>
-        </section>
     </footer>
 </body>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

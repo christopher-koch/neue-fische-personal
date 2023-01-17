@@ -1,0 +1,48 @@
+:root {
+    --color-white: #c0caf5;
+    --color-light-gray: #9aa5ce;
+    --color-middle-gray: #565f89;
+    --color-gray: #414868;
+    --color-dark-gray: #24283b;
+    --color-black: #1a1b26;
+    --color-red: #f7768e;
+    --color-orange: #ff9e64;
+    --color-yellow: #e0af68;
+    --color-green: #9ece6a;
+    --color-ice: #73daca;
+    --color-turquoise: #2ac3de;
+    --color-ice: #7dcfff;
+    --color-purple: #bb9af7;
+}
+
+@font-face {
+    font-family: 'Hubot Sans';
+    src:
+      url('/quiz-app/Hubot-Sans.woff2') format('woff2 supports variations'),
+      url('/quiz-app/Hubot-Sans.woff2') format('woff2-variations');
+    font-weight: 200 900;
+    font-stretch: 75% 125%;
+  }
+
+html {
+    font-family: 'Hubot Sans';
+}
+
+body {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 900;
+    font-stretch: extra-expanded;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
