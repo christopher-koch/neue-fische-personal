@@ -81,3 +81,11 @@ article ul li {
     right: 10%;
     top: -2%;
 }
+
+.card__answer--hidden {
+    display: none;
+}
+
+.card__btn_answer--hidden {
+    display: none;
+}

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=#, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="./scripts.js" defer></script>
     <title>Quiz App</title>
 </head>
 <body>
@@ -17,8 +18,8 @@
                 <article>
                     <a href="#"><ion-icon class="card__bookmark-icon--inactive" name="bookmark"></ion-icon></a>
                     <h2 class="card__question">What Property flips the axis in flexbox?</h2>
-                    <button class="card__btn_answer">Answer</button>
-                    <h3 class="card__answer">Here stands the answer</h3>
+                    <button class="card__btn_answer" data-js="answerButton">Answer</button>
+                    <h3 class="card__answer card__answer--hidden" data-js="answer">Here saaaatands the answer</h3>
                     <ul class="card__tag_list">
                         <li>#html</li>
                         <li>#css</li>
